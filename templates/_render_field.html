@@ -1,0 +1,8 @@
+{% macro render_field(field) %}
+<div class="form-group">
+    <div class="row">
+        <div class="col-md-6 lead"> {{ field.label }}</div>
+        <div class="col-md-6"> {{ field(class_="form-control") }}</div>
+    </div>
+</div>
+{% endmacro %}
